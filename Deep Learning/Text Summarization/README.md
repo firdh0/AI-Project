@@ -1,7 +1,7 @@
 <img src="./img/Header.png">
 
 # :large_blue_circle: **Objective** :large_blue_circle:
-This summary project was created with an encoder and decoder of a pretrained `cahya/bert-base-indonesian-522M` bert model using 20% of the data from the dataset due to limited computing resources
+This summary project was created with an encoder and decoder of a pretrained `cahya/bert-base-indonesian-522M` bert model using 30% of the data from the dataset due to limited computing resources
 <br><br>
 
 # :large_blue_circle: **Materials and Tools Used** :large_blue_circle:
