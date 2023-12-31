@@ -14,12 +14,12 @@ The code editor I used in this project was Google Colab to create the model, whi
 <br><br>
 
 # :large_blue_circle: **Report** :large_blue_circle:
-### :triangular_flag_on_post: **[Load Data](https://github.com/firdh0/AI-Project/blob/main/Deep%20Learning/Text%20Summarization/0_Load%20Data.ipynb)**
+### :triangular_flag_on_post: **[Load Data](https://github.com/firdh0/AI-Project/blob/main/Deep%20Learning/Audio%20Classification/00_Load%20Data.ipynb)**
 At the data load stage, I took the path of each data (I made it a dataframe) to simplify the Explorative Data Analysis (EDA) process. Previously, I had divided the data into two parts, namely training data and testing data. Next, I grouped each path according to the categories contained in `intent_class`.
 <br><br>
 
-### :triangular_flag_on_post: **[EDA](https://github.com/firdh0/AI-Project/blob/main/Deep%20Learning/Text%20Summarization/1_Preprocessing%20Data.ipynb)**
-At this EDA stage, I display several graphs that I think are quite necessary to know the data characteristics of each `intent_class`. I retrieve the data for each `intent_class` by taking the first order of all the data in the dataframe as a result of [Load Data](). The following are the EDA results that I have obtained:
+### :triangular_flag_on_post: **[EDA](https://github.com/firdh0/AI-Project/blob/main/Deep%20Learning/Audio%20Classification/01_EDA.ipynb)**
+At this EDA stage, I display several graphs that I think are quite necessary to know the data characteristics of each `intent_class`. I retrieve the data for each `intent_class` by taking the first order of all the data in the dataframe as a result of [Load Data](https://github.com/firdh0/AI-Project/blob/main/Deep%20Learning/Audio%20Classification/00_Load%20Data.ipynb). The following are the EDA results that I have obtained:
 
 #### :beginner: **Distribution All Data, Train Data, and Test Data**
 <img src="./img/0.png">
@@ -66,7 +66,7 @@ Chroma is usually calculated as a feature vector with 12 elements, representing 
 
 <br>
 
-### :triangular_flag_on_post: **[Model](https://github.com/firdh0/AI-Project/blob/main/Deep%20Learning/Text%20Summarization/1_Preprocessing%20Data.ipynb)**
+### :triangular_flag_on_post: **[Model](https://github.com/firdh0/AI-Project/blob/main/Deep%20Learning/Audio%20Classification/02_Model.ipynb)**
 At this model stage I did several experiments with only 2 things that I changed, namely `num_train_epochs` from 2, 4, 8, 16 and `learning_rate` from 2e-5 and 4e-5
 
 #### :beginner: **Attempt 1**
@@ -85,4 +85,4 @@ From experiments 1 and 2 the following conclusions can be drawn:
 
 * From the experimental results above, it can be understood that:
      * Dataset [PolyAI/MINDS14](https://huggingface.co/datasets/PolyAI/minds14) is not suitable for using `Wav2Vec` models
-     * At the [EDA]() stage, it can be seen that the distribution of the data is unbalanced and at the model creation stage there is no oversampling process with data augmentation or undersampling so it could affect the model which in the end only gets such accuracy.
+     * At the [EDA](https://github.com/firdh0/AI-Project/blob/main/Deep%20Learning/Audio%20Classification/01_EDA.ipynb) stage, it can be seen that the distribution of the data is unbalanced and at the model creation stage there is no oversampling process with data augmentation or undersampling so it could affect the model which in the end only gets such accuracy.
